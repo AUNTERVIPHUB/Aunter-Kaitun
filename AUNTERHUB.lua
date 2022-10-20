@@ -16,7 +16,7 @@ end
 
 if not game:IsLoaded()then
 	local d=Instance.new("Message",workspace)
-	d.Text='Waiting game to loaded before scripts is getting executed by GoosT Hub'
+	d.Text='Waiting game to loaded before scripts is getting executed by AUNTER'
 	game.Loaded:Wait()
 	d:Destroy()
 	task.wait(5)
@@ -106,7 +106,7 @@ task.wait(0.5)
 repeat wait()
 until x.Backpack:FindFirstChildOfClass("Tool")
 _G.MethodC = Color3.fromRGB(85, 85, 255)
-local UiLib =  game:GetService("CoreGui").RobloxGui.Modules:FindFirstChild("GoosT Hub") 
+local UiLib =  game:GetService("CoreGui").RobloxGui.Modules:FindFirstChild("AUNTER") 
 if UiLib then 
     UiLib:Destroy()
     print("Ui Destroy.")
@@ -141,7 +141,7 @@ end
 
 	local Reduisceen = Instance.new("ScreenGui")
 	Reduisceen.Parent = game:GetService("CoreGui").RobloxGui.Modules
-	Reduisceen.Name = "GoosT Hub"
+	Reduisceen.Name = "AUNTER"
 	Reduisceen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local function MakeDraggable(topbarobject, object)
@@ -459,6 +459,8 @@ local TextButton77 = Instance.new("TextButton")
             end
         end
     end)
+
+	
     function UISetToggle(Set)
         if not Set then
             library.toggledui = true
@@ -607,7 +609,7 @@ local TextButton77 = Instance.new("TextButton")
                 Method="POST",
                 Headers={
                     ["Content-Type"]="application/json",
-                    ["Origin"]="https://discord.com"
+                    ["Origin"]="https://discord.gg/pDQhNs2v"
                 },
             Body = b:JSONEncode({
                 cmd="INVITE_BROWSER",
@@ -622,6 +624,12 @@ local TextButton77 = Instance.new("TextButton")
 		Main_UiXConner.CornerRadius = UDim.new(0, 8)
 		Main_UiXConner.Name = "Main_UiXConner"
 		Main_UiXConner.Parent = JoinButton
+
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Aunter Notification", 
+			Text = "ฟังชั่นพร้อมฟามเวล",
+			Duration = 8
+		})
 		
 local IMGNAME = Instance.new("ImageLabel")
 	IMGNAME.Name = "IMGDATA"
@@ -651,7 +659,7 @@ local IMGNAME = Instance.new("ImageLabel")
 		NameReal2.AnchorPoint = Vector2.new(0.5, 0.5)
 		NameReal2.Size = UDim2.new(0, 136, 0, 34)
 		NameReal2.Font = Enum.Font.GothamBold
-		NameReal2.Text = "GoosT"
+		NameReal2.Text = "AUNTER"
 		NameReal2.TextColor3 = _G.MethodC
 		NameReal2.TextSize = 25.000
 
@@ -715,7 +723,7 @@ local IMGNAME = Instance.new("ImageLabel")
 		NameReal.AnchorPoint = Vector2.new(0.5, 0.5)
 		NameReal.Size = UDim2.new(0, 136, 0, 34)
 		NameReal.Font = Enum.Font.GothamBold
-		NameReal.Text = "GoosT"
+		NameReal.Text = "AUNTER"
 		NameReal.TextColor3 = _G.MethodC
 		NameReal.TextSize = 23.000
 		
